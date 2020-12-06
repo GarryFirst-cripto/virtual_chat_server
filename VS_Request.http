@@ -1,0 +1,68 @@
+### GET Request
+GET http://MicrochatServer-env.eba-twm3v2ky.us-east-2.elasticbeanstalk.com/users
+content-type: application/json
+
+### POST Request
+POST http://MicrochatServer-env.eba-twm3v2ky.us-east-2.elasticbeanstalk.com/users/login
+content-type: application/json
+
+{
+    "username": "Admin",
+    "password": "admin"
+}
+
+### POST Request
+POST http://Chatserv-env.eba-v78kcb5z.us-east-2.elasticbeanstalk.com/users
+content-type: application/json
+
+{
+    "email": "garry@mail.mail",
+    "username": "John",
+    "password": "22222"
+}
+
+### PUT Request
+PUT http://Chatserv-env.eba-v78kcb5z.us-east-2.elasticbeanstalk.com/users/537192f6-9051-4004-a2b6-f2c6e2b7532b
+content-type: application/json
+
+{
+    "id": "537192f6-9051-4004-a2b6-f2c6e2b7532b",
+    "email": "jhonny@mail.mail",
+    "username": "Jonny-1",
+    "password": "111111"
+}
+
+### DELETE Request
+DELETE http://Chatserv-env.eba-v78kcb5z.us-east-2.elasticbeanstalk.com/users/07ca4677-2d4c-496d-8c93-cdbdad6a88a8
+
+
+
+### GET Request (posts)
+GET http://Chatserv-env.eba-v78kcb5z.us-east-2.elasticbeanstalk.com/posts
+content-type: application/json
+
+### GET Request
+GET http://Chatserv-env.eba-v78kcb5z.us-east-2.elasticbeanstalk.com/posts/045979dc-0c68-49cd-b58f-72ca23ee63e1
+content-type: application/json
+
+### POST Request
+POST http://Chatserv-env.eba-v78kcb5z.us-east-2.elasticbeanstalk.com/posts
+content-type: application/json
+
+{
+    "userId": "4dc80bb7-d7b5-474f-a61d-d62b33009c52",
+    "text": "0000000000000-11111111111111-222222222222-333333333333"
+}
+
+### PUT Request
+PUT http://Chatserv-env.eba-v78kcb5z.us-east-2.elasticbeanstalk.com/posts
+content-type: application/json
+
+{
+    "id": "2cdc9bf9-5c36-4695-b844-4845bfaee61a",
+    "text": "aaaaa aaaaa ssss sssssss ddddddd dddddd"
+}
+
+### DELETE Request
+DELETE http://Chatserv-env.eba-v78kcb5z.us-east-2.elasticbeanstalk.com/posts/2cdc9bf9-5c36-4695-b844-4845bfaee61a
+content-type: application/json
