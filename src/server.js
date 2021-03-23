@@ -2,12 +2,10 @@ import express from 'express';
 import { createConnection } from 'typeorm';
 import path from 'path';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import routes from './routes/index';
+import env from './config';
 
-dotenv.config();
-
-createConnection()
+createConnection(env.connection)
   .then(() => {
     // eslint-disable-next-line no-console
     console.log('Connection has been established successfully.');
